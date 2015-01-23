@@ -12,9 +12,9 @@ You will have `autotools`, `make`, `gcc` installed.
 
 ## Build
 
-run these command in order:
-	autoreconf
-	./configure
-	make
+run these command in order:(not available yet)
+`autoreconf`
+`./configure`
+`make`
 
 That should generate a binary file. Type `ts --help` for syntax and other help.
