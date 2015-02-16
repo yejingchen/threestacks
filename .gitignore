@@ -1,2 +1,16 @@
 ts
 threestacks
+config.h
+config.h.in
+config.log
+config.status
+configure
+Makefile
+Makefile.in
+*.swp
+*~
+~*
+src/Makefile
+src/Makefile.in
+*.o
+autom4te.cache/

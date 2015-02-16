@@ -4,7 +4,7 @@
 
 This little program calculates the number of possibilities of dividing some balls into some boxes.
 
-Also a test field for me to practise aotutools, gettext, vim, and so on.
+Also a test field for me to practice `autotools`, `gettext`, `vim`, and so on.
 
 ## Requirements
 
@@ -12,9 +12,12 @@ You will have `autotools`, `make`, `gcc` installed.
 
 ## Build
 
-run these command in order:(not available yet)
-`autoreconf`
-`./configure`
-`make`
+Run these command in order:
 
-That should generate a binary file. Type `ts --help` for syntax and other help.
+> `autoreconf`
+>
+> `./configure`
+>
+> `make all`
+
+That should generate a binary file under `src/`. Type `ts --help` for syntax and other help.

@@ -6,8 +6,12 @@
 #include <stdlib.h>
 #include "argtable3.h"
 
-#define PROGVERS "2.0"
-#define PROGNAME "threestacks"
+#if HAVE_CONFIG_H
+# include "config.h"
+#endif
+
+#define PROGVERS VERSION
+#define PROGNAME PACKAGE_NAME
 
 void
 prtiarray(int a[], int len)
@@ -77,8 +81,8 @@ main(int argc, char *argv[])
 	/* "--help" detected: print help and exit. Don't do anything. */
 	if (help->count > 0) {
 		printf("%s - calculates the number of possibilities \n"
-			   "of dividing some balls into some boxes\n\n", PROGNAME);
-		arg_print_syntax(stdout, argtable, PROGNAME);
+			   "of dividing some balls into some boxes\n\n %s", PROGNAME, PROGNAME);
+		arg_print_syntax(stdout, argtable, NULL);
 		printf("\n");
 		arg_print_glossary_gnu(stdout, argtable);
 
